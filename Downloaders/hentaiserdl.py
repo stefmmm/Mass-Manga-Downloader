@@ -1,7 +1,7 @@
 import requests
 import json
-import zipfile
 import os
+import zipfile
 import time
 import shutil
 
