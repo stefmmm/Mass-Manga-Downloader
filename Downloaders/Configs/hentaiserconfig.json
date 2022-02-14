@@ -1,0 +1,56 @@
+{
+  "conf": {
+    "Default-File": "hentaiser.txt"
+  },
+  "headers": {
+    "Host": "api.hentaiser.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0",
+    "Accept": "*/*",
+    "Accept-Language": "en,en-US;q=0.5",
+    "Accept-Encoding": "deflate",
+    "Referer": "https://app.hentaiser.com/",
+    "Content-Type": "application/json",
+    "Origin": "https://app.hentaiser.com",
+    "DNT": "1",
+    "Connection": "keep-alive",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "TE": "trailers"
+  },
+  "imgheaders": {
+    "Host": "media.hentaiser.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en,en-US;q=0.5",
+    "Accept-Encoding": "deflate",
+    "Referer": "https://app.hentaiser.com/",
+    "DNT": "1",
+    "Connection": "keep-alive",
+    "Cookie": "__cf_bm=X9NyNwPoXAK0TGEFWsWF0L8N2GC_eryI.80i27xHCOM-1643472609-0-AYDkLJI1I2357wfLQK8k9yLg0lPbZ+x68CpeDuF5PuMM3zTqPDIz4ctxaPH7nxUnTr40qLz0ihxsVpP0UluOAHg=",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-site",
+    "Sec-Fetch-User": "?1",
+    "Cache-Control": "max-age=0",
+    "TE": "trailers"
+  },
+  "img2headers": {
+    "Host": "media2.hentaiser.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0",
+    "Accept": "image/avif,image/webp,*/*",
+    "Accept-Language": "en,en-US;q=0.5",
+    "Accept-Encoding": "deflate",
+    "Referer": "https://app.hentaiser.com/",
+    "DNT": "1",
+    "Connection": "keep-alive",
+    "Cookie": "__cf_bm=hK2MYRph3AdANmYNmkeZMCIy7IvTIm1ZVrDEDrZ4L8M-1643507252-0-AQQj8MvqT/aljelp0IyvjDm/LheexHXTuTM6wGUZLkxh9Rw06NThJpTp755WgulPkVtLk9iH1xX2yR93/WWyBuY=; __PPU_SESSION_1_1783689=1643507264787|0|0|0|0",
+    "Sec-Fetch-Dest": "image",
+    "Sec-Fetch-Mode": "no-cors",
+    "Sec-Fetch-Site": "same-site",
+    "Pragma": "no-cache",
+    "Cache-Control": "no-cache",
+    "TE": "trailers"
+  }
+}

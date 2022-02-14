@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+Library/*
+Downloads/__pycache__/
+test.py
+.idea/*
+nhentai.txt
+pururin-io.txt
+pururin.json
+requirements.txt
+testing.txt
+truehentai2.txt
+truehentai3.txt
+truehentaiser.txt
