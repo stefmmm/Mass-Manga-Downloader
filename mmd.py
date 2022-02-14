@@ -1,8 +1,12 @@
 from Downloaders.pururindl import pururindl
 from Downloaders.hentaiserdl import hentaiserdl
 from time import sleep
+import os
 # please don't change stuff unless you know what you're doing.
 version = 1.0
+
+if not os.path.exists('Library/'):
+    os.makedirs(os.path.dirname('Library/'), exist_ok=True)
 
 
 def main():
@@ -35,8 +39,10 @@ def main():
         sleep(3)
         main()
 
+
 def credits():
     print('Made by Stefmmm')
+
 
 if __name__ == '__main__':
     main()
