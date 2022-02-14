@@ -11,6 +11,7 @@ headers = readconf['headers']
 imgheaders = readconf['imgheaders']
 img2headers = readconf['img2headers']
 DefaultFile = readconf['conf']['Default-File']
+LibraryLoc = readconf['conf']['Library-Location']
 
 def hentaiserdl():
 
@@ -36,11 +37,11 @@ def hentaiserdl():
                 continue
             data = json.loads(req.text)
             num = 0
-            os.makedirs(os.path.dirname('Library/Hentaiser/'), exist_ok=True)
+            os.makedirs(os.path.dirname(LibraryLoc), exist_ok=True)
             os.makedirs(os.path.dirname('Downloaders/Hentaiser-Temp/'), exist_ok=True)
 
-            if not os.path.exists('Library/Hentaiser/' + newarc):
-                createzip = zipfile.ZipFile('Library/Hentaiser/' + newarc, 'w')
+            if not os.path.exists(LibraryLoc + newarc):
+                createzip = zipfile.ZipFile(LibraryLoc + newarc, 'w')
                 with createzip:
                     for images in data:
 
@@ -59,7 +60,7 @@ def hentaiserdl():
                         f = open(f'Downloaders/Hentaiser-Temp/{realnum}.jpg', 'wb')
                         f.write(reqimg.content)
                         f.close()
-                        with zipfile.ZipFile('Library/Hentaiser/' + newarc, 'a') as file:
+                        with zipfile.ZipFile(LibraryLoc + newarc, 'a') as file:
                             file.write(f'Downloaders/Hentaiser-Temp/{realnum}.jpg', f'{realnum}.jpg')
                 time.sleep(0.5)
 

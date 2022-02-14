@@ -9,6 +9,7 @@ import re
 config = open('Downloaders/Configs/pururinconfig.json', 'r')
 readconf = json.load(config)
 DefaultFile = readconf['conf']['Default-File']
+LibraryLoc = readconf['conf']['Library-Location']
 
 
 def pururindl():
@@ -46,9 +47,9 @@ def pururindl():
         archive_name = f'{thename}.zip'
         fj.close()
         print(theid + ' = ' + archive_name)
-        os.makedirs(os.path.dirname('Library/Pururin/'), exist_ok=True)
-        if not os.path.exists('Library/Pururin/' + archive_name):
-            createzip = zipfile.ZipFile('Library/Pururin/' + archive_name, 'w')
+        os.makedirs(os.path.dirname(LibraryLoc), exist_ok=True)
+        if not os.path.exists(LibraryLoc + archive_name):
+            createzip = zipfile.ZipFile(LibraryLoc + archive_name, 'w')
             with createzip:
 
                 for x in range(1, totalpages + 1):
@@ -63,9 +64,9 @@ def pururindl():
 
                     f.write(getfile.content)
                     f.close()
-                    with zipfile.ZipFile('Library/Pururin/' + file_name, 'a') as file:
+                    with zipfile.ZipFile(LibraryLoc + file_name, 'a') as file:
                         file.write(f'Downloaders/Pururin-Temp/{filenum}.jpg', f'{filenum}.jpg')
-                    with zipfile.ZipFile('Library/Pururin/' + file_name, 'r') as file:
+                    with zipfile.ZipFile(LibraryLoc + file_name, 'r') as file:
                         print(file.namelist())
         else:
             print('ZIP Already Exists, Skipping...')

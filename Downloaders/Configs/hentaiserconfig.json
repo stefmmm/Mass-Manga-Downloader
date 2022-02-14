@@ -1,6 +1,7 @@
 {
   "conf": {
-    "Default-File": "hentaiser.txt"
+    "Default-File": "hentaiser.txt",
+    "Library-Location": "Library/Hentaiser/"
   },
   "headers": {
     "Host": "api.hentaiser.com",

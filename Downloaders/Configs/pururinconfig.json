@@ -1,5 +1,6 @@
 {
   "conf": {
-    "Default-File": "pururin.json"
+    "Default-File": "pururin.json",
+    "Library-Location": "Library/Pururin/"
   }
 }
