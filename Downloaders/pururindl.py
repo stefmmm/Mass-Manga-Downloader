@@ -19,7 +19,7 @@ def pururindl():
     errors = 0
     dupes = 0
     fj = open(DefaultFile)
-    data = json.load(fj)
+    data = fj.readlines()
     for i in data:
         count += 1
         expr = re.compile("[0-9]+")
