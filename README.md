@@ -6,11 +6,9 @@
 ##### 4. Choose the Module you desire to use.
 ##### 5. Profit
 
-### Stuff to note:
-##### Reader is unsurprisingly borked, certain special characters break things
+### Reader
+#####This was removed, just pretend it never existed.
 
 ### Module's
-##### Now i'm gonna be honest this definitely needs refining..
-##### 1. The pururin module expects a json file containing gallery urls
-##### 2. The hentaiser module expects a txt file containing the book id's
+##### All modules expect a txt file in the root folder with the same name as the module
 ##### More Module's Soon™ (just request one and i'll get to it one day)
